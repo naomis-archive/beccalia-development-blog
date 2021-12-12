@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "beccalia-development-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A blog for announcements related to the Beccalia game series.",
+  "version": "1.0.0",
+  "author": "Nicholas Carrigan",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/beccalia/development-blog/issues"
   },
   "dependencies": {
     "gatsby": "^4.3.0",
@@ -33,9 +33,10 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "^2.4.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/beccalia/development-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -43,11 +44,12 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/beccalia/development-blog.git"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",

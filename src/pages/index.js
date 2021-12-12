@@ -27,6 +27,16 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
       <Bio />
+      <p>
+        Pinned Post:{" "}
+        {posts
+          .filter(post => post.frontmatter.pinned)
+          .map(post => (
+            <Link to={post.fields.slug} itemProp="url">
+              <span itemProp="name">{post.frontmatter.title}</span>
+            </Link>
+          ))}
+      </p>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -82,6 +92,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          pinned
         }
       }
     }

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Beccalia Development Blog"}},"allMarkdownRemark":{"nodes":[{"excerpt":"Welcome to the Beccalia Development Blog! We will be using this blog site to share the latest news and development updates regarding our…","fields":{"slug":"/social/welcome/"},"frontmatter":{"date":"December 12, 2021","title":"Announcing Our New Blog!","description":"Welcome to our new blog - be sure to follow this blog to stay up to date with the latest Beccalia game development news!","pinned":true}}]}},"pageContext":{}},
+    "staticQueryHashes": ["2841359383","3008643779"]}

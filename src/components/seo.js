@@ -70,6 +70,10 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `og:image`,
+          content: `https://cdn.nhcarrigan.com/content/banners/nhcarrigan.png`,
+        },
       ].concat(meta)}
     />
   )

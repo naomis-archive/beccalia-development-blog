@@ -54,12 +54,10 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --purple: #aea8d3;
+  --green: #90ee90;
+  --dark-purple: #3a3240;
+  --dark-green: #013220;
 }
 
 /* HTML elements */
@@ -80,7 +78,8 @@ html {
 body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
-  color: var(--color-text);
+  background: linear-gradient(to left, var(--dark-purple), var(--dark-green));
+  color: var(--purple);
 }
 
 footer {
@@ -114,13 +113,11 @@ h4,
 h5,
 h6 {
   font-weight: var(--fontWeight-bold);
-  color: var(--color-heading);
 }
 
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
 }
 
 h2 {
@@ -144,7 +141,6 @@ h6 {
 }
 
 h1 > a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -154,7 +150,6 @@ h4 > a,
 h5 > a,
 h6 > a {
   text-decoration: none;
-  color: inherit;
 }
 
 /* Prose */
@@ -197,11 +192,10 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-light);
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
+  border-left: var(--spacing-1) solid var(--green);
   font-size: var(--fontSize-2);
   font-style: italic;
   margin-bottom: var(--spacing-8);
@@ -230,20 +224,25 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--green);
+  transition: 0.5s ease-in-out;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  background-color: var(--green);
+  color: var(--dark-green);
 }
 
 /* Custom classes */
 
 .global-wrapper {
   margin: var(--spacing-0) auto;
+  margin-top: 20px;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {

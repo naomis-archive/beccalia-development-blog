@@ -75,7 +75,22 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `https://cdn.nhcarrigan.com/content/banners/nhcarrigan.png`,
         },
       ].concat(meta)}
-    />
+    >
+      {/* Global site tag (gtag.js) - Google Analytics  */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-PJ2XP5YW1Y"
+      ></script>
+      <script>
+        {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PJ2XP5YW1Y');
+  `}
+      </script>
+    </Helmet>
   )
 }
 

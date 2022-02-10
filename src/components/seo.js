@@ -76,20 +76,11 @@ const Seo = ({ description, lang, meta, title }) => {
         },
       ].concat(meta)}
     >
-      {/* Global site tag (gtag.js) - Google Analytics  */}
       <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-PJ2XP5YW1Y"
+        src="https://van-england.beccalia.com/script.js"
+        data-site="EBEPALSC"
+        defer
       ></script>
-      <script>
-        {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PJ2XP5YW1Y');
-  `}
-      </script>
     </Helmet>
   )
 }

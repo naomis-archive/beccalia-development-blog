@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Beccalia Development Blog`,
     author: {
-      name: `nhcarrigan`,
+      name: `Naomi`,
       summary: `a developer building open source tools, community management bots on Discord, and these games!`,
     },
     description: `This blog contains development updates for the Beccalia series of games.`,

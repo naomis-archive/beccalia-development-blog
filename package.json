@@ -34,7 +34,10 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
-    "prettier": "^2.4.1"
+    "markdownlint": "^0.25.1",
+    "markdownlint-cli": "^0.31.1",
+    "prettier": "^2.4.1",
+    "spellchecker-cli": "^4.10.0"
   },
   "homepage": "https://github.com/beccalia/development-blog#readme",
   "keywords": [
@@ -51,9 +54,10 @@
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "markdownlint ./content/**/*.md",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "spellchecker --config './.spellcheckerrc.json'"
   }
 }

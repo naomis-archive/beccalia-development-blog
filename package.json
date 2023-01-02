@@ -41,7 +41,7 @@
     "gh-pages": "4.0.0",
     "markdownlint": "0.27.0",
     "markdownlint-cli": "0.32.2",
-    "prettier": "2.7.1",
+    "prettier": "2.8.1",
     "spellchecker-cli": "6.1.0"
   },
   "homepage": "https://github.com/beccalia/development-blog#readme",

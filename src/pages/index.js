@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, Script } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -25,6 +25,9 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Script id="crisp">
+        {`window.$crisp=[];window.CRISP_WEBSITE_ID="ea133e14-19ff-4ae0-a0be-a3bf9943dc5c";(function(){d = document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`}
+      </Script>
       <Seo title="Beccalia Development Blog" />
       <Bio />
       <p>

@@ -9,6 +9,6 @@ Welcome to the Beccalia Development Blog! We will be using this blog site to sha
 ## Social Information
 
 - [Join our Chat Server](https://chat.nhcarrigan.com)
-- [Follow us on Twitter](https://twitter.com/nhcarrigan)
+- [Follow us on Mastodon](https://mastodon.naomi.lgbt/@beccalia)
 - [Follow this blog on GitHub](https://github.com/beccalia/development-blog)
 - [RSS Feed](https://blog.beccalia.com/rss.xml)

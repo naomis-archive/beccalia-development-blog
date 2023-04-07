@@ -19,7 +19,7 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            mastodon
             discord
           }
         }
@@ -47,11 +47,11 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong>, {author?.summary || null}
           {` You should `}
-          <a href={`https://mastodon.naomi.lgbt/@${social?.mastodon || ``}`}>
+          <a target="_blank" rel="noreferrer" href={`https://mastodon.naomi.lgbt/@${social?.mastodon || ``}`}>
             follow our Mastodon
           </a>
           {` or `}
-          <a href={social?.discord || ``}> join our Discord!</a>
+          <a target="_blank" rel="noreferrer" href={social?.discord || ``}> join our Discord!</a>
         </p>
       )}
     </div>

@@ -2,7 +2,6 @@
 title: Beccalia Prologue - Release!
 date: "2021-12-18"
 description: "Announcing the release of our very first game!"
-pinned: true
 ---
 
 After 140 hours of development time spanning six weeks, we are very excited to announce the launch of our first game - **Prologue**. This game will give you a brief introduction to our series' two main characters, Becca and Rosalia. You'll get a glimpse of who they are and the relationship they have.

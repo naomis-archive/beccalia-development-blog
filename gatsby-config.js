@@ -8,7 +8,7 @@ module.exports = {
     description: `This blog contains development updates for the Beccalia series of games.`,
     siteUrl: `https://blog.beccalia.com/`,
     social: {
-      twitter: `BeccaliaGames`,
+      mastodon: `BeccaliaGames`,
       discord: "https://chat.nhcarrigan.com",
     },
   },

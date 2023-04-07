@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "gatsby": "4.25.6",
-    "gatsby-plugin-disqus": "1.2.4",
+    "gatsby-plugin-disqus": "1.2.5",
     "gatsby-plugin-feed": "4.25.0",
     "gatsby-plugin-gatsby-cloud": "4.25.0",
     "gatsby-plugin-google-analytics": "4.25.0",
